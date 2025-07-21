@@ -3,41 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ministério de Música - Igreja Católica</title>
+  <title>Ministério de Música no Deserto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f4;
+    }
+    .navbar {
+      background-color: #4b6b50; /* Verde oliva litúrgico */
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') center/cover no-repeat;
+      background: linear-gradient(rgba(75, 107, 80, 0.7), rgba(75, 107, 80, 0.7)),
+                  url('paroquiaSCJ.jpg') center/cover no-repeat; /* FOTO DA PARÓQUIA */
       color: white;
       text-align: center;
-      padding: 100px 20px;
+      padding: 120px 20px;
     }
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 15px;
     }
     .section-title {
-      margin-top: 50px;
-      margin-bottom: 20px;
+      margin-top: 60px;
+      margin-bottom: 25px;
       text-align: center;
+      color: #4b6b50;
+      font-weight: bold;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
     footer {
-      background: #222;
-      color: #ddd;
-      padding: 20px;
+      background: #4b6b50;
+      color: #f5f5f5;
+      padding: 25px;
       text-align: center;
+      margin-top: 40px;
+    }
+    a {
+      color: #cdbb75; /* Dourado suave */
+    }
+    a:hover {
+      color: #e4d38a;
     }
   </style>
 </head>
 <body>
 
   <!-- MENU -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">🎶 Ministério de Música</a>
+      <a class="navbar-brand" href="#">🎶 Música no Deserto</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,9 +77,9 @@
 
   <!-- BANNER -->
   <section class="hero">
-    <h1>Ministério de Música</h1>
-    <p>Servindo com alegria através da música litúrgica</p>
-    <a href="#agenda" class="btn btn-light mt-3">Ver Agenda</a>
+    <h1>Ministério de Música no Deserto</h1>
+    <p>Servindo a Deus e à comunidade com alegria e devoção através da música litúrgica</p>
+    <a href="#agenda" class="btn btn-light mt-4">📅 Ver Agenda</a>
   </section>
 
   <div class="container">
@@ -65,17 +88,17 @@
     <h2 class="section-title" id="agenda">📅 Próximos Ensaios</h2>
     <div class="row">
       <div class="col-md-6">
-        <div class="card mb-3">
+        <div class="card mb-4">
           <div class="card-body">
-            <h5 class="card-title">Ensaio - Quinta-feira</h5>
+            <h5 class="card-title text-success">Ensaio - Quinta-feira</h5>
             <p class="card-text">20h no Salão Paroquial</p>
           </div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card mb-3">
+        <div class="card mb-4">
           <div class="card-body">
-            <h5 class="card-title">Ensaio - Sábado</h5>
+            <h5 class="card-title text-success">Ensaio - Sábado</h5>
             <p class="card-text">17h na Igreja Matriz</p>
           </div>
         </div>
@@ -84,8 +107,9 @@
 
     <!-- REPERTÓRIO -->
     <h2 class="section-title" id="repertorio">🎵 Repertório da Próxima Missa</h2>
-    <ul class="list-group mb-4">
+    <ul class="list-group mb-5">
       <li class="list-group-item">Entrada: Vem Espírito Santo</li>
+      <li class="list-group-item">Ato Penitencial: Senhor, tende piedade</li>
       <li class="list-group-item">Ofertório: Bendito Sejas Senhor</li>
       <li class="list-group-item">Comunhão: Pão da Vida</li>
       <li class="list-group-item">Final: Maria de Nazaré</li>
@@ -93,16 +117,16 @@
 
     <!-- EQUIPE -->
     <h2 class="section-title" id="equipe">🙌 Nossa Equipe</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
         <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Membro 1">
         <h5>João - Violão</h5>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 mb-4">
         <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Membro 2">
         <h5>Maria - Voz</h5>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 mb-4">
         <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="Membro 3">
         <h5>Carlos - Saxofone</h5>
       </div>
@@ -110,14 +134,17 @@
 
     <!-- CONTATO -->
     <h2 class="section-title" id="contato">📩 Contato</h2>
-    <p class="text-center">Quer participar ou saber mais? Envie um e-mail para<br>
-      <a href="mailto:musica@paroquia.com.br">musica@paroquia.com.br</a></p>
+    <p class="text-center">
+      Quer participar ou saber mais?<br>
+      Envie um e-mail para<br>
+      <a href="mailto:musica.no.deserto@paroquia.com.br">musica.no.deserto@paroquia.com.br</a>
+    </p>
 
   </div>
 
   <!-- RODAPÉ -->
   <footer>
-    &copy; 2025 Ministério de Música | Igreja Católica
+    &copy; 2025 Ministério de Música no Deserto | Paróquia Sagrado Coração de Jesus - Mestre d'Armas
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
