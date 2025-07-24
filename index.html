@@ -11,7 +11,7 @@
       background-color: #f9f9f4;
     }
     .navbar {
-      background-color: #4b6b50; /* Verde oliva litúrgico */
+      background-color: #4b6b50;
     }
     .hero {
       background: linear-gradient(rgba(75, 107, 80, 0.7), rgba(75, 107, 80, 0.7)),
@@ -28,6 +28,11 @@
     .hero p {
       font-size: 1.3rem;
       margin-top: 15px;
+    }
+    #versiculo {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      font-style: italic;
     }
     .section-title {
       margin-top: 60px;
@@ -59,12 +64,16 @@
       object-fit: cover;
       border: 3px solid #ddd;
     }
-    /* ✅ NOVO: limitar tamanho das escalas */
     .scale-img {
-      max-width: 700px; /* largura máxima */
-      width: 100%;      /* continua responsiva */
+      max-width: 700px;
+      width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .carousel-item img {
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -83,6 +92,7 @@
           <li class="nav-item"><a class="nav-link" href="#repertorio">Repertório</a></li>
           <li class="nav-item"><a class="nav-link" href="#escala-semana">Escala da Semana</a></li>
           <li class="nav-item"><a class="nav-link" href="#escala-domingos">Escala de Domingos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
           <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
@@ -94,6 +104,8 @@
   <section class="hero">
     <h1>Ministério de Música no Deserto</h1>
     <p>Servindo a Deus e à comunidade com alegria e devoção através da música litúrgica</p>
+    <!-- Versículo bíblico aleatório -->
+    <div id="versiculo">Carregando versículo...</div>
     <a href="#agenda" class="btn btn-light mt-4">📅 Ver Agenda</a>
   </section>
 
@@ -150,6 +162,29 @@
       </a>
     </div>
 
+    <!-- GALERIA DE FOTOS EM CARROSSEL -->
+    <h2 class="section-title" id="galeria">📸 Galeria de Fotos</h2>
+    <div id="carouselGaleria" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="foto1.jpg" class="d-block w-100" alt="Evento 1">
+        </div>
+        <div class="carousel-item">
+          <img src="foto2.jpg" class="d-block w-100" alt="Evento 2">
+        </div>
+        <div class="carousel-item">
+          <img src="foto3.jpg" class="d-block w-100" alt="Evento 3">
+        </div>
+      </div>
+      <!-- Botões do carrossel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
     <!-- EQUIPE -->
     <h2 class="section-title" id="equipe">🙌 Nossa Equipe</h2>
     <div class="row text-center">
@@ -174,6 +209,11 @@
       Envie um e-mail para<br>
       <a href="mailto:paroquia.scj.mestredarmas@gmail.com">paroquia.scj.mestredarmas@gmail.com</a>
     </p>
+    <div class="text-center mb-5">
+      <a href="https://wa.me/55SEUNUMERO?text=Olá,+quero+saber+mais+sobre+o+Ministério+de+Música!" target="_blank" class="btn btn-success">
+        💬 Falar no WhatsApp
+      </a>
+    </div>
 
   </div>
 
@@ -183,6 +223,18 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script Versículo Aleatório -->
+  <script>
+    const versiculos = [
+      "Salmo 100:2 - Servi ao Senhor com alegria; apresentai-vos diante dele com cântico.",
+      "Efésios 5:19 - Falando entre vós com salmos, hinos e cânticos espirituais.",
+      "Salmo 150:6 - Todo ser que respira louve ao Senhor. Aleluia!",
+      "Colossenses 3:16 - Cantando ao Senhor com graça em vosso coração.",
+      "Salmo 95:1 - Vinde, cantemos ao Senhor com júbilo; celebremos o rochedo da nossa salvação."
+    ];
+    document.getElementById("versiculo").innerText = versiculos[Math.floor(Math.random() * versiculos.length)];
+  </script>
 </body>
 </html>
 
