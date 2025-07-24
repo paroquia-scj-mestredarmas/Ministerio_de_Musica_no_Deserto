@@ -15,7 +15,7 @@
     }
     .hero {
       background: linear-gradient(rgba(75, 107, 80, 0.7), rgba(75, 107, 80, 0.7)),
-                  url('paroquiaSCJ.jpg') center/cover no-repeat; /* FOTO DA PARÓQUIA */
+                  url('paroquiaSCJ.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 120px 20px;
@@ -48,16 +48,23 @@
       margin-top: 40px;
     }
     a {
-      color: #cdbb75; /* Dourado suave */
+      color: #cdbb75;
     }
     a:hover {
       color: #e4d38a;
     }
     .team-photo {
-      width: 120px;     /* largura fixa */
-      height: 120px;    /* altura fixa */
-      object-fit: cover; /* garante que a foto não distorça */
-      border: 3px solid #ddd; /* borda suave */
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+    /* ✅ NOVO: limitar tamanho das escalas */
+    .scale-img {
+      max-width: 700px; /* largura máxima */
+      width: 100%;      /* continua responsiva */
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -126,7 +133,7 @@
     <!-- ESCALA DA SEMANA -->
     <h2 class="section-title" id="escala-semana">📜 Escala da Semana</h2>
     <div class="text-center mb-3">
-      <img src="escalasemana.jpeg" class="img-fluid rounded shadow mb-3" alt="Escala da Semana">
+      <img src="escalasemana.jpeg" class="scale-img mb-3" alt="Escala da Semana">
       <br>
       <a href="escalasemana.jpeg" download class="btn btn-success">
         📥 Baixar Escala da Semana
@@ -136,7 +143,7 @@
     <!-- ESCALA DE DOMINGOS -->
     <h2 class="section-title" id="escala-domingos">⛪ Escala de Domingos</h2>
     <div class="text-center mb-3">
-      <img src="cronogramamissa.jpg" class="img-fluid rounded shadow mb-3" alt="Escala de Domingos">
+      <img src="cronogramamissa.jpg" class="scale-img mb-3" alt="Escala de Domingos">
       <br>
       <a href="cronogramamissa.jpg" download class="btn btn-success">
         📥 Baixar Escala de Domingos
