@@ -72,11 +72,16 @@
     }
     /* ✅ Carrossel menor e centralizado */
     .carousel-item img {
-      max-height: 250px;   /* altura reduzida */
-      max-width: 80%;      /* ocupa só 80% da largura */
-      margin: auto;        /* centraliza */
-      object-fit: cover;   /* mantém proporção */
-      border-radius: 10px; /* cantos arredondados */
+      max-height: 250px;
+      max-width: 80%;
+      margin: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    /* ✅ Deixar as setas do carrossel pretas */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
     }
   </style>
 </head>
