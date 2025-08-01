@@ -83,7 +83,20 @@
     .carousel-control-next-icon {
       filter: invert(1);
     }
-  </style>
+  
+    /* Estiliza os números dos dias */
+    .fc-daygrid-day-number {
+      color: #003366 !important;
+      text-align: center;
+      font-weight: bold;
+    }
+    /* Reduz a largura geral do calendário */
+    #calendar {
+      max-width: 800px;
+      margin: 0 auto 60px auto;
+    }
+
+</style>
 </head>
 <body>
 
@@ -120,25 +133,33 @@
   <div class="container">
 
     <!-- AGENDA -->
-    <h2 class="section-title" id="agenda">📅 Próximos Ensaios</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h5 class="card-title text-success">Ensaio - Quinta-feira</h5>
-            <p class="card-text">20h no Salão Paroquial</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h5 class="card-title text-success">Ensaio - Sábado</h5>
-            <p class="card-text">17h na Igreja Matriz</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+<!-- CALENDÁRIO INTEGRADO -->
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+<h2 class="section-title" id="agenda">📅 Calendário do Ministério</h2>
+<div id='calendar' style="margin-bottom: 60px;"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      locale: 'pt-br',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: ''
+      },
+      events: [
+        { title: 'Missa 19h - Matriz', date: '2025-07-21' },
+        { title: 'Crisma - Matriz', date: '2025-08-05' },
+        { title: 'Missa da Juventude', date: '2025-08-11' }
+      ]
+    });
+    calendar.render();
+  });
+</script>
+
 
     <!-- REPERTÓRIO -->
     <h2 class="section-title" id="repertorio">🎵 Repertório da Próxima Missa</h2>
