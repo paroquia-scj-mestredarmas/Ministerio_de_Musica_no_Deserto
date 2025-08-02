@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ministério de Música no Deserto</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ministério de Música no Deserto</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
     body {
       font-family: 'Georgia', serif;
       background-color: #f9f9f4;
@@ -99,46 +100,41 @@
 </style>
 </head>
 <body>
-
-  <!-- MENU -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">🎶 Música no Deserto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#repertorio">Repertório</a></li>
-          <li class="nav-item"><a class="nav-link" href="#escala-semana">Escala da Semana</a></li>
-          <li class="nav-item"><a class="nav-link" href="#escala-domingos">Escala de Domingos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-          <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- BANNER -->
-  <section class="hero">
-    <h1>Ministério de Música no Deserto</h1>
-    <p>Servindo a Deus e à comunidade com alegria e devoção através da música litúrgica</p>
-    <!-- Versículo bíblico aleatório -->
-    <div id="versiculo">Carregando versículo...</div>
-    <a href="#agenda" class="btn btn-light mt-4">📅 Ver Agenda</a>
-  </section>
-
-  <div class="container">
-
-    <!-- AGENDA -->
-    
+<!-- MENU -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">🎶 Música no Deserto</a>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+<li class="nav-item"><a class="nav-link" href="#repertorio">Repertório</a></li>
+<li class="nav-item"><a class="nav-link" href="#escala-semana">Escala da Semana</a></li>
+<li class="nav-item"><a class="nav-link" href="#escala-domingos">Escala de Domingos</a></li>
+<li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+<li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- BANNER -->
+<section class="hero">
+<h1>Ministério de Música no Deserto</h1>
+<p>Servindo a Deus e à comunidade com alegria e devoção através da música litúrgica</p>
+<!-- Versículo bíblico aleatório -->
+<div id="versiculo">Carregando versículo...</div>
+<a class="btn btn-light mt-4" href="#agenda">📅 Ver Agenda</a>
+</section>
+<div class="container">
+<!-- AGENDA -->
 <!-- CALENDÁRIO INTEGRADO -->
-<link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css' rel='stylesheet' />
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
 <h2 class="section-title" id="agenda">📅 Calendário do Ministério</h2>
-<div id='calendar' style="margin-bottom: 60px;"></div>
+<div id="calendar" style="margin-bottom: 60px;"></div>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
@@ -173,102 +169,95 @@
     calendar.render();
   });
 </script>
-
-
-    <!-- REPERTÓRIO -->
-    <h2 class="section-title" id="repertorio">🎵 Repertório da Próxima Missa</h2>
-    <ul class="list-group mb-5">
-      <li class="list-group-item">Entrada: Vem Espírito Santo</li>
-      <li class="list-group-item">Ato Penitencial: Senhor, tende piedade</li>
-      <li class="list-group-item">Ofertório: Bendito Sejas Senhor</li>
-      <li class="list-group-item">Comunhão: Pão da Vida</li>
-      <li class="list-group-item">Final: Maria de Nazaré</li>
-    </ul>
-
-    <!-- ESCALA DA SEMANA -->
-    <h2 class="section-title" id="escala-semana">📜 Escala da Semana</h2>
-    <div class="text-center mb-3">
-      <img src="escalasemana.jpeg" class="scale-img mb-3" alt="Escala da Semana">
-      <br>
-      <a href="escalasemana.jpeg" download class="btn btn-success">
+<!-- REPERTÓRIO -->
+<h2 class="section-title" id="repertorio">🎵 Repertório da Próxima Missa</h2>
+<ul class="list-group mb-5">
+<li class="list-group-item">Entrada: Vem Espírito Santo</li>
+<li class="list-group-item">Ato Penitencial: Senhor, tende piedade</li>
+<li class="list-group-item">Ofertório: Bendito Sejas Senhor</li>
+<li class="list-group-item">Comunhão: Pão da Vida</li>
+<li class="list-group-item">Final: Maria de Nazaré</li>
+</ul>
+<!-- ESCALA DA SEMANA -->
+<h2 class="section-title" id="escala-semana">📜 Escala da Semana</h2>
+<div class="text-center mb-3">
+<img alt="Escala da Semana" class="scale-img mb-3" src="escalasemana.jpeg"/>
+<br/>
+<a class="btn btn-success" download="" href="escalasemana.jpeg">
         📥 Baixar Escala da Semana
       </a>
-    </div>
-
-    <!-- ESCALA DE DOMINGOS -->
-    <h2 class="section-title" id="escala-domingos">⛪ Escala de Domingos</h2>
-    <div class="text-center mb-3">
-      <img src="cronogramamissa.jpg" class="scale-img mb-3" alt="Escala de Domingos">
-      <br>
-      <a href="cronogramamissa.jpg" download class="btn btn-success">
+</div>
+<!-- ESCALA DE DOMINGOS -->
+<h2 class="section-title" id="escala-domingos">⛪ Escala de Domingos</h2>
+<div class="text-center mb-3">
+<img alt="Escala de Domingos" class="scale-img mb-3" src="cronogramamissa.jpg"/>
+<br/>
+<a class="btn btn-success" download="" href="cronogramamissa.jpg">
         📥 Baixar Escala de Domingos
       </a>
-    </div>
-
-    <!-- GALERIA DE FOTOS EM CARROSSEL -->
-    <h2 class="section-title" id="galeria">📸 Galeria de Fotos</h2>
-    <div id="carouselGaleria" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="foto1.jpg" class="d-block" alt="Evento 1">
-        </div>
-        <div class="carousel-item">
-          <img src="foto2.jpg" class="d-block" alt="Evento 2">
-        </div>
-        <div class="carousel-item">
-          <img src="foto3.jpg" class="d-block" alt="Evento 3">
-        </div>
-      </div>
-      <!-- Botões do carrossel -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <!-- EQUIPE -->
-    <h2 class="section-title" id="equipe">🙌 Nossa Equipe</h2>
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <img src="membro1.png" class="rounded-circle team-photo mb-2" alt="Maurício - Violão/teclados">
-        <h5>Maurício - Violão/teclados</h5>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="membro2.png" class="rounded-circle team-photo mb-2" alt="Cláudia - Voz">
-        <h5>Cláudia - Voz</h5>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="membro3.png" class="rounded-circle team-photo mb-2" alt="Uires - Bateria/Saxofone">
-        <h5>Uires - Bateria/Saxofone</h5>
-      </div>
-    </div>
-
-    <!-- CONTATO -->
-    <h2 class="section-title" id="contato">📩 Contato</h2>
-    <p class="text-center">
-      Quer participar ou saber mais?<br>
-      Envie um e-mail para<br>
-      <a href="mailto:paroquia.scj.mestredarmas@gmail.com">paroquia.scj.mestredarmas@gmail.com</a>
-    </p>
-    <div class="text-center mb-5">
-      <a href="https://wa.me/55SEUNUMERO?text=Olá,+quero+saber+mais+sobre+o+Ministério+de+Música!" target="_blank" class="btn btn-success">
+</div>
+<!-- GALERIA DE FOTOS EM CARROSSEL -->
+<h2 class="section-title" id="galeria">📸 Galeria de Fotos</h2>
+<div class="carousel slide mb-5" data-bs-interval="5000" data-bs-ride="carousel" id="carouselGaleria">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img alt="Evento 1" class="d-block" src="foto1.jpg"/>
+</div>
+<div class="carousel-item">
+<img alt="Evento 2" class="d-block" src="foto2.jpg"/>
+</div>
+<div class="carousel-item">
+<img alt="Evento 3" class="d-block" src="foto3.jpg"/>
+</div>
+</div>
+<!-- Botões do carrossel -->
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselGaleria" type="button">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselGaleria" type="button">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+<!-- EQUIPE -->
+<h2 class="section-title" id="equipe">🙌 Nossa Equipe</h2>
+<div class="row text-center">
+<div class="col-md-4 mb-4">
+<img alt="Maurício - Violão/teclados" class="rounded-circle team-photo mb-2" src="membro1.png"/>
+<h5>Maurício - Violão/teclados</h5>
+</div>
+<div class="col-md-4 mb-4">
+<img alt="Cláudia - Voz" class="rounded-circle team-photo mb-2" src="membro2.png"/>
+<h5>Cláudia - Voz</h5>
+</div>
+<div class="col-md-4 mb-4">
+<img alt="Uires - Bateria/Saxofone" class="rounded-circle team-photo mb-2" src="membro3.png"/>
+<h5>Uires - Bateria/Saxofone</h5>
+</div>
+<div class="col-md-4 mb-4">
+<img alt="Novo Integrante - Violão/Voz" class="rounded-circle team-photo mb-2" src="membro4.png"/>
+<h5>Irineu - Violão/Voz</h5>
+</div>
+</div>
+<!-- CONTATO -->
+<h2 class="section-title" id="contato">📩 Contato</h2>
+<p class="text-center">
+      Quer participar ou saber mais?<br/>
+      Envie um e-mail para<br/>
+<a href="mailto:paroquia.scj.mestredarmas@gmail.com">paroquia.scj.mestredarmas@gmail.com</a>
+</p>
+<div class="text-center mb-5">
+<a class="btn btn-success" href="https://wa.me/55SEUNUMERO?text=Olá,+quero+saber+mais+sobre+o+Ministério+de+Música!" target="_blank">
         💬 Falar no WhatsApp
       </a>
-    </div>
-
-  </div>
-
-  <!-- RODAPÉ -->
-  <footer>
-    &copy; 2025 Ministério de Música no Deserto | Paróquia Sagrado Coração de Jesus - Mestre d'Armas
+</div>
+</div>
+<!-- RODAPÉ -->
+<footer>
+    © 2025 Ministério de Música no Deserto | Paróquia Sagrado Coração de Jesus - Mestre d'Armas
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script Versículo Aleatório -->
-  <script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script Versículo Aleatório -->
+<script>
     const versiculos = [
       "Salmo 100:2 - Servi ao Senhor com alegria; apresentai-vos diante dele com cântico.",
       "Efésios 5:19 - Falando entre vós com salmos, hinos e cânticos espirituais.",
@@ -280,4 +269,3 @@
   </script>
 </body>
 </html>
-
